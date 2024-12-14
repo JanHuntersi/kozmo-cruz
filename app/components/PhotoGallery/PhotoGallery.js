@@ -45,42 +45,6 @@ const galleryThumbnails = [
 			{ src: "/gallery/slider-images/slider-9.jpg" },
 		],
 	},
-	{
-		id: 4,
-		src: "/gallery/thumbnails/thumbnail-4.jpg",
-		club: "The Cool Mouse.",
-		city: "New York",
-		date: "03/12/2018",
-		slides: [
-			{ src: "/gallery/slider-images/slider-10.jpg" },
-			{ src: "/gallery/slider-images/slider-11.jpg" },
-			{ src: "/gallery/slider-images/slider-12.jpg" },
-		],
-	},
-	{
-		id: 5,
-		src: "/gallery/thumbnails/thumbnail-5.jpg",
-		club: "The Super Cat.",
-		city: "Rome",
-		date: "03/03/2018",
-		slides: [
-			{ src: "/gallery/slider-images/slider-13.jpg" },
-			{ src: "/gallery/slider-images/slider-14.jpg" },
-			{ src: "/gallery/slider-images/slider-15.jpg" },
-		],
-	},
-	{
-		id: 6,
-		src: "/gallery/thumbnails/thumbnail-6.jpg",
-		club: "The Brave Salmon.",
-		city: "Berlin",
-		date: "25/12/2017",
-		slides: [
-			{ src: "/gallery/slider-images/slider-16.jpg" },
-			{ src: "/gallery/slider-images/slider-17.jpg" },
-			{ src: "/gallery/slider-images/slider-18.jpg" },
-		],
-	},
 ];
 
 export default function PhotoGallery() {
@@ -97,7 +61,7 @@ export default function PhotoGallery() {
 	return (
 		<section
 			id="photo-gallery"
-			className={`w-full mt-16 pb-14 lg:mt-56 lg:pb-56 lg:mb-[22.5rem]`}
+			className={`w-full mt-8 pb-2 lg:mt-28 lg:pb-28 `}
 			style={{
 				transform: isInView ? "none" : "translateY(100px)",
 				opacity: isInView ? 1 : 0,
@@ -105,14 +69,15 @@ export default function PhotoGallery() {
 			}}
 			ref={sectionRef}>
 			<Container>
-				<h2 className="font-bold text-6xl pb-6">Gallery</h2>
-				<p>Past shows.</p>
+				<h2 className="font-bold pb-6">Naši špili</h2>
+
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
 					{galleryThumbnails.map((item, index) => {
 						return (
 							<div className="flex flex-col mb-5 leading-none" key={item.id}>
 								<div className="w-full h-full rounded-lg bg-fluo-green transition-all">
 									<Image
+										loading="lazy"
 										className="rounded-lg cursor-pointer hover:opacity-60 transition-all"
 										src={item.src}
 										width={400}
@@ -123,7 +88,7 @@ export default function PhotoGallery() {
 								</div>
 								<h5 className="text-sm md:text-lg xl:text-xl font-medium">{item.club}</h5>
 								<span className="flex">
-									<MapMapper />
+									<MapMapper className="fill-white" />
 									<h5 className="ml-2 text-sm md:text-lg">{item.city}</h5>
 								</span>
 								<span className="flex">

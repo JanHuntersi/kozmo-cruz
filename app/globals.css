@@ -34,4 +34,20 @@
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
+
+	p {
+		@apply text-textMobile sm:text-textNormal text-white;
+	}
+
+	h2 {
+		@apply text-headingMobile sm:text-headingNormal font-permanentMarker text-white;
+	}
+
+	h5 {
+		@apply text-white;
+	}
+
+	body {
+		background-color: #202020;
+	}
 }

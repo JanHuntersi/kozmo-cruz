@@ -1,9 +1,11 @@
 import Footer from "./components/Footer/Footer";
 import "./globals.css";
 
+//TODO SEO optimization
+
 export const metadata = {
-	title: "Free Next.js Music band starter template | by Panino Panini",
-	description: "Free Next.js rock'n'roll band starter template to clone/fork from my Github page.",
+	title: "Kozmo Cruz",
+	description: "Kozmo Cruz Rock Band iz Slovenije.", 
 	verification: {
 		google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
 	},

@@ -3,12 +3,12 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 
-const Slide = ({ left, progress, direction }) => {
+const Slide = ({ left, progress, direction, color= "black" }) => {
 	const moveDirection = direction == "left" ? -1 : 1;
 	const translateX = useTransform(progress, [0, 1], [200 * moveDirection, -200 * moveDirection]);
 
 	return (
-		<motion.div style={{ x: translateX, left: left }} className="relative flex whitespace-nowrap">
+		<motion.div style={{ x: translateX, left: left, color: color }} className="relative flex whitespace-nowrap">
 			<Phrase />
 			<Phrase />
 			<Phrase />
@@ -24,7 +24,7 @@ const Slide = ({ left, progress, direction }) => {
 const Phrase = () => {
 	return (
 		<div>
-			<p className="text-[5rem] leading-none overflow-hidden uppercase font-bold">Panic Panini -</p>
+			<span className="text-[5rem] leading-none overflow-hidden uppercase  font-bold">-Kozmo Cruz</span>
 		</div>
 	);
 };
@@ -41,7 +41,7 @@ export default function TextParallax() {
 
 	return (
 		<section
-			className="overflow-hidden mt-16 lg:mt-56"
+			className="overflow-hidden mt-8 "
 			style={{
 				transform: isInView ? "none" : "translateY(50px)",
 				opacity: isInView ? 1 : 0,
@@ -49,8 +49,11 @@ export default function TextParallax() {
 			}}
 			ref={sectionRef}>
 			<div ref={containerRef}>
-				<Slide direction={"left"} left={"-40%"} progress={scrollYProgress} />
-				<Slide direction={"right"} left={"-25%"} progress={scrollYProgress} />
+				<Slide direction={"left"} left={"-40%"} color="white" progress={scrollYProgress} />
+				<Slide direction={"right"} left={"-25%"} color="blue"  progress={scrollYProgress} />
+				<Slide direction={"left"} left={"-25%"} color="white" progress={scrollYProgress} />
+				<Slide direction={"right"} left={"-25%"} color="blue"  progress={scrollYProgress} />
+				<Slide direction={"left"} left={"-25%"} color="white" progress={scrollYProgress} />
 			</div>
 		</section>
 	);

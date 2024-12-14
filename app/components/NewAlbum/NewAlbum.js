@@ -15,8 +15,7 @@ export default function NewAlbum({ customClasses }) {
 				opacity: isInView ? 1 : 0,
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 			}}>
-			<h4 className="text-white font-permanentMarker text-xl">New Album</h4>
-			<h4 className="text-white font-rockSalt text-xl">Panic in the room</h4>
+			<h2 className="text-white font-rockSalt text-xl">Nov Dan</h2>
 			<p className="text-fluo-green text-base">Coming out on 15th December</p>
 		</div>
 	);
