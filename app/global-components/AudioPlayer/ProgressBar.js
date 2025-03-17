@@ -22,7 +22,7 @@ export default function ProgressBar({ progressBarRef, audioRef, timeProgress, du
 				<span className="text-base font-bold text-white">{formatTime(timeProgress)}</span>
 				{!audioRef.current?.paused && timeProgress < 0.5 && <Image className="ml-2 max-w-[2.5rem]" src="/three-dots.svg" width={120} height={30} alt="Loader" />}
 			</div>
-			<input type="range" ref={progressBarRef} defaultValue="0" onChange={handleProgressChange} />
+			<input type="range"  className="w-full h-2 rounded-lg ring-4 focus:ring-4" ref={progressBarRef} defaultValue="0" onChange={handleProgressChange} />
 			<span className="text-base font-bold text-white">{formatTime(duration)}</span>
 		</div>
 	);

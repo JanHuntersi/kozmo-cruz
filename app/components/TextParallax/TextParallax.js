@@ -50,9 +50,9 @@ export default function TextParallax() {
 			ref={sectionRef}>
 			<div ref={containerRef}>
 				<Slide direction={"left"} left={"-40%"} color="white" progress={scrollYProgress} />
-				<Slide direction={"right"} left={"-25%"} color="blue"  progress={scrollYProgress} />
+				<Slide direction={"right"} left={"-25%"}  color="#df8622"  progress={scrollYProgress} />
 				<Slide direction={"left"} left={"-25%"} color="white" progress={scrollYProgress} />
-				<Slide direction={"right"} left={"-25%"} color="blue"  progress={scrollYProgress} />
+				<Slide direction={"right"} left={"-25%"}  color="#df8622"  progress={scrollYProgress} />
 				<Slide direction={"left"} left={"-25%"} color="white" progress={scrollYProgress} />
 			</div>
 		</section>

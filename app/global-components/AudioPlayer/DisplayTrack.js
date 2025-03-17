@@ -19,7 +19,7 @@ export default function DisplayTrack({ currentTrack, audioRef, setDuration, prog
 					{trackIndex + 1}. {currentTrack.title}
 				</p>
 				<p>
-					Artist: <span className="italic">{currentTrack.author}</span>
+					Artist: <span className="italic text-[flou-orange]">{currentTrack.author}</span>
 				</p>
 			</div>
 		</div>

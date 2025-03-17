@@ -9,12 +9,8 @@ import BackToTop from "../BackToTop/BackToTop";
 import { useInView } from "framer-motion";
 import CookieConsent from "react-cookie-consent";
 
-const observerOptions = {
-	rootMargin: "0px",
-	threshold: 0,
-};
 
-export default function Intro() {
+export default function Intro({ data }) {
 	const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
 	const sectionRef = useRef(null);
 	const isInView = useInView(sectionRef);
@@ -52,9 +48,12 @@ export default function Intro() {
 					</p>
 				</video>
 			</div>
-			<Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:justify-end lg:items-end">
-				<IntroTourDates />
-			</Container>
+			{(data &&  data.length > 0) &&
+				<Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:justify-end lg:items-end">
+					<IntroTourDates tourDates={data}/>
+				</Container>
+			}
+
 			<NewAlbum customClasses="mt-auto z-50 lg:hidden" />
 			<BackToTop customClasses={`reveal${isScrollTopVisible ? " visible" : ""}`} />
 			<CookieConsent
@@ -62,7 +61,7 @@ export default function Intro() {
 				buttonText="Consent"
 				cookieName="cookie_consent"
 				buttonClasses="bg-yellow-btn-primary rounded-full p-1 px-3 text-sm text-xs text-white"
-				containerClasses="w-full fixed !bottom-0 bg-fluo-green p-3 z-[50] lg:bg-stone-300/70 lg:backdrop-blur-lg lg:left-8 lg:!bottom-2 lg:rounded-md lg:max-w-md"
+				containerClasses="w-full fixed !bottom-0 bg-flou-orange p-3 z-[50] lg:bg-stone-300/70 lg:backdrop-blur-lg lg:left-8 lg:!bottom-2 lg:rounded-md lg:max-w-md"
 				contentClasses="text-sm leading-none mb-1 lg:text-white"
 				expires={20}>
 				This website uses cookies to enhance the user experience.

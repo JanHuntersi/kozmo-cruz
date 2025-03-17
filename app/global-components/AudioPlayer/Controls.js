@@ -38,16 +38,16 @@ export default function Controls({ audioRef, progressBarRef, duration, setTimePr
 
 	return (
 		<div className="flex items-center pt-8 pb-4 gap-4">
-			<button onClick={togglePlayPause}>{isPlaying ? <Pause extraClasses="fill-red-300 hover:fill-white transition-all" /> : <Play extraClasses="fill-red-300 hover:fill-white transition-all" />}</button>
+			<button onClick={togglePlayPause}>{isPlaying ? <Pause extraClasses="fill-flou-orange hover:fill-white transition-all" /> : <Play extraClasses="fill-flou-orange hover:fill-white transition-all" />}</button>
 			<button className="ml-auto">
-				<HeartOutline extraClasses="fill-red-300" />
+				<HeartOutline extraClasses="fill-flou-orange" />
 			</button>
 			<button onClick={handlePrevious}>
-				<PreviousSong extraClasses="fill-red-300 hover:fill-white transition-all" />
+				<PreviousSong extraClasses="fill-flou-orange hover:fill-white transition-all" />
 			</button>
 
 			<button onClick={handleNext}>
-				<NextSong extraClasses="fill-red-300 hover:fill-white transition-all" />
+				<NextSong extraClasses="fill-flou-orange hover:fill-white transition-all" />
 			</button>
 		</div>
 	);

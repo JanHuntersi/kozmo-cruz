@@ -5,15 +5,21 @@ import BandMembers from "./components/About/BandMembers";
 import ContactUs from "./components/ContactUs/ContactUs";
 import PhotoGallery from "./components/PhotoGallery/PhotoGallery";
 import TextParallax from "./components/TextParallax/TextParallax";
-export default function Home() {
+import Shows from "./components/Shows/Shows";
+import { getTourDates } from "./lib/supabaseService";
+import { getCachedTourDates } from "./lib/cache";
+
+export default async function Home() {
+	const tourDates = await getCachedTourDates(getTourDates);
+
 	return (
 		<>
 			<main className="min-h-screen bg-0f0f0f">
-				<Intro />
+				<Intro data={tourDates}/>
 				<About />
 				<ContactUs />
 				<Listen />
-				{/*<Shows /> */}
+				<Shows data={tourDates}/>
 				<BandMembers />
 				<TextParallax />
 				<PhotoGallery />
@@ -22,13 +28,3 @@ export default function Home() {
 	);
 }
 
-
-/*
-TODO
-
-element.style {
-    background-color: #0f0f0f;
-    color: rgb(67 255 182 / var(--tw-text-opacity, 1));
-}
-
-*/

@@ -5,9 +5,9 @@ import "./globals.css";
 
 export const metadata = {
 	title: "Kozmo Cruz",
-	description: "Kozmo Cruz Rock Band iz Slovenije.", 
+	description: "KozmoCruz Rock Band iz Slovenije.", 
 	verification: {
-		google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
+		//google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
 	},
 };
 

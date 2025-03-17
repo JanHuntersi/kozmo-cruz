@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,  // Omogoči JavaScript datoteke
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",  // Omogoči uporabo @ kot root
+    "paths": {
+      "@/*": ["./*"],  // Omogoči uporabo @ za sklicevanje na root mapo
+      "@components/*": ["app/components/*"],  // Dodaj pot za components mapo
+      "@lib/*": ["app/lib/*"]  
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"  // Dodaj .js datoteke v vključene poti
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -6,8 +6,8 @@ import Container from "@/app/global-components/Container/Container";
 import TourDates from "../TourDates/TourDates";
 import { ArrowBottom } from "@/app/svg-icons/svg-icons";
 
-export default function Shows() {
-	const [isScrollMoreVisible, setIsScrollMoreVisible] = useState(true);
+export default function Shows({data}) {
+	const [isScrollMoreVisible, setIsScrollMoreVisible] = useState(false);
 	const showsContainerRef = useRef(null);
 	const scrollableDivRef = useRef(null);
 	const isInView = useInView(showsContainerRef, { once: true });
@@ -21,6 +21,7 @@ export default function Shows() {
 
 	useEffect(() => {
 		const scrollableDiv = scrollableDivRef.current;
+	
 		const handleScroll = () => {
 			if (
 				scrollableDiv.scrollTop +
@@ -59,7 +60,7 @@ export default function Shows() {
 				<div
 					className="scoller relative mt-6 h-[calc(100%-14rem)] overflow-hidden overflow-y-auto no-scrollbar"
 					ref={scrollableDivRef}>
-					<TourDates />
+					<TourDates data={data} />
 				</div>
 
 				<div

@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				"album-cover": "url('/panic-panini-album.jpg')",
-				"incoming-shows": "url('/coming-shows-bg.jpg')",
+				"incoming-shows": "url('/gallery/band-images/group-incoming-shows.JPEG')",
 				"hero-pattern": "url('/pattern.png')",
 			},
 			fontFamily: {
@@ -15,10 +15,13 @@ module.exports = {
 				rockSalt: ["Rock Salt", "sans-serif"],
 			},
 			colors: {
-				"fluo-green": "#43ffb6",
+				"flou-orange": "#df8622",
 				"yellow-btn-primary": "#ffc621",
 				"medium-gray": "#bebebe",
 				"full-black": "#0f0f0f",
+			},
+			ringColor: {
+				DEFAULT: "#df8622",
 			},
 			boxShadow: {
 				"centered-shadow": "0px 0px 19px 4px rgba(0,0,0,0.1)",

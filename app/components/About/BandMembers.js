@@ -63,7 +63,7 @@ export default function BendMembers() {
               href={image.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-x-4 gap-y-1 transition-transform transform hover:scale-105 hover:bg-gray-600 rounded-lg p-4"
+              className="flex flex-col items-center gap-x-4 gap-y-1 transition-transform transform hover:scale-105 hover:bg-flou-orange rounded-lg p-4"
             >
               <div className="w-[150px] h-[150px] rounded-full overflow-hidden aspect-square">
                 <Image
