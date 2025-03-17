@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": "",
+    "paths": {
+      "@/app/*": ["app/*"],
+      "@/components/*": ["components/*"],
+      "@/global-components/*": ["app/global-components/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,  // Omogoči JavaScript datoteke
+    "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "noEmit": true,
@@ -20,21 +26,14 @@
       {
         "name": "next"
       }
-    ],
-    "baseUrl": ".",  // Omogoči uporabo @ kot root
-    "paths": {
-      "@/*": ["./*"],  // Omogoči uporabo @ za sklicevanje na root mapo
-      "@components/*": ["app/components/*"],  // Dodaj pot za components mapo
-      "@lib/*": ["app/lib/*"]  
-    }
+    ]
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "**/*.js"  // Dodaj .js datoteke v vključene poti
-  ],
+    "**/*.tsx"
+, "app/lib/supabaseServicejs"  ],
   "exclude": [
     "node_modules"
   ]

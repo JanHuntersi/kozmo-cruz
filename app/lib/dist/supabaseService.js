@@ -40,7 +40,7 @@ exports.getTourDates = exports.supabase = void 0;
 var supabase_js_1 = require("@supabase/supabase-js");
 exports.supabase = supabase_js_1.createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_KEY);
 function getTourDates() {
-    return __awaiter(this, void 0, Promise, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var _a, data, error;
         return __generator(this, function (_b) {
             switch (_b.label) {

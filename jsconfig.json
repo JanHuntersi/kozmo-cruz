@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "jsx": "react",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/app/*": ["app/*"],
+      "@/components/*": ["components/*"],
+      "@/global-components/*": ["app/global-components/*"]
     }
   }
 }
