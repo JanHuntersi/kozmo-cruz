@@ -13,7 +13,6 @@ export default function About() {
 		<section
 			id="about"
 			className="relative flex flex-col items-center justify-end w-full mt-16 mx-auto max-w-[150rem] lg:mt-28">
-		
 			{/* Glavni Container */}
 			<Container customClasses="relative flex flex-col lg:flex-row lg:items-start lg:gap-x-12 lg:items-center lg:justify-center">
 				<div
@@ -26,13 +25,10 @@ export default function About() {
 					}}>
 					<h2 className="font-permanentMarker font-bold  pb-6">Naša zgodba</h2>
 					<p >
-						Kozmo Cruz je energičen rock bend, ki združuje surovost klasičnega rocka z moderno
-						produkcijo in izjemno odrsko karizmo.
+						KOZMO CRUZ je petčlanska skupina, ki z avtorsko glasbo sledi preprostemu pravilu – v glasbi ni pravil! Če zveni dobro, potem je dobro. Njihove pesmi so večinoma v slovenščini, saj skozi materni jezik najlažje izrazijo svoja čustva.
 					</p>
 					<p className="pt-8">
-						S svojo avtentičnostjo in predanostjo glasbi so si hitro ustvarili zveste oboževalce.
-						Njihov najnovejši album "Stardust Rebels" govori o notranjih bitkah, iskanju svobode
-						in hrepenenju po nečem večjem.
+						Kmalu izdajajo prvi singel, sledil pa bo mini album (EP), s katerim želijo predstaviti svojo glasbeno vizijo. Čeprav so novi na sceni, imajo kot posamezniki že odrske in studijske izkušnje, ki jih bodo nadgradili na koncertih po Sloveniji. Strast do ustvarjanja, energija in skupni cilji jih ženejo naprej – na vedno nove odre in v nove glasbene podvige.
 					</p>
 				</div>
 				{/* Slika za večje zaslone */}
