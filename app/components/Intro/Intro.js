@@ -37,7 +37,7 @@ export default function Intro({ data }) {
 					autoPlay
 					muted
 					loop
-					poster="/frame-band.jpg"
+					poster="/first-frame.png"
 					className="object-cover w-full h-full z-10"
 					playsInline>
 					<source src="./video-band.webm" type="video/webm" />

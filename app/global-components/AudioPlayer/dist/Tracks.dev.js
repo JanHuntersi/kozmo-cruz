@@ -1,0 +1,12 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.tracks = void 0;
+var tracks = [{
+  title: "Novo Jutro",
+  src: "./mp3-songs/novo-jutro.wav",
+  author: "Kozmo Cruz"
+}];
+exports.tracks = tracks;

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Container from "@/app/global-components/Container/Container";
-import { Spotify, Youtube,Facebook, Instagram } from "@/app/svg-icons/svg-icons";
+import {Youtube,Facebook, Instagram, TikTok } from "@/app/svg-icons/svg-icons";
 
 export default function ContactUs() {
 	const textRef = useRef(null);
@@ -22,33 +22,33 @@ export default function ContactUs() {
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}>
 				<div className="flex flex-col max-w-4xl text-center xs:p-15 lg:p-0">
-					<h2 className="font-bold pb-5  leading-[50px] ">Hej, mi smo tudi tukaj</h2>
+					<h2 className="font-bold pb-6  leading-[50px] ">Hej, mi smo tudi tukaj</h2>
 					<Container customClasses="flex-row justify-center items-center">
 						<div className=" text-center">
 							<p>sledite nam lahko na teh omrežij</p>
 						</div>
-						<div className="flex gap-4 justify-center mt-5">
+						<div className="flex gap-4 justify-center mt-4">
 							
-							<a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">
-							<Spotify />
+							<a href="https://www.tiktok.com/@kozmocruz" target="_blank" rel="noopener noreferrer">
+							<TikTok />
 							</a>
-							<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.youtube.com/@KozmoCruz" target="_blank" rel="noopener noreferrer">
 							<Youtube />
 							</a>
-							<a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.facebook.com/people/Kozmo-Cruz/61567119525307/?mibextid=wwXIfr&rdid=UN6n3f2ULehFidVk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A6VMfm26J%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer">
 							<Facebook />
 							</a>
-							<a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.instagram.com/kozmocruz/#" target="_blank" rel="noopener noreferrer">
 							<Instagram />
 							</a>
 						</div>
-						<div className="mt-5 text-2xl text-center">
+						<div className="mt-9 text-2xl text-center">
 							<p className="pb-1">Management & Booking</p>
 							<a
-								href="mailto:kozmokruz@gmail.com?subject=Pozdrav&body=Želim se povezati z vašim bendom!"
+								href="mailto:kozmocruz.band@gmail.com?subject=Pozdrav&body=Želim se povezati z vašim bendom!"
 								className="text-white underline hover:text-white"
 							>
-								kozmokruz@gmail.com
+								kozmocruz.band@gmail.com
 							</a>
 						</div>
 					</Container>
