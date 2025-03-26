@@ -6,7 +6,7 @@ import localFont from 'next/font/local'
 
 export const metadata = {
 	title: "Kozmo Cruz",
-	description: "KozmoCruz Rock Band iz Slovenije.", 
+	description: "Kozmo-Cruz Rock Band iz Slovenije.", 
 	verification: {
 		//google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
 	},
