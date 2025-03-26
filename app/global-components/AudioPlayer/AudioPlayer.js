@@ -27,7 +27,7 @@ export default function AudioPlayer() {
 
 	return (
 		<div className="relative w-full max-w-[35rem] my-auto bg-black rounded-xl border-solid border-4 border-white shadow-centered-shadow p-5 pt-28 before:content-[''] before:absolute before:-top-4 before:left-1/2 before:-translate-x-1/2 before:w-[29.6rem] before:h-[8.5rem] before:max-w-[15rem] before:bg-cover before:blur-md before:opacity-90 lg:w-3/4 lg:before:max-w-[18.75rem] lg:before:h-[11.25rem] lg:pt-40 lg:p-11">
-			<Image  loading="lazy" className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-xl max-w-[16rem] lg:max-w-xs" src="/gallery/music-player/logo.png" width={475} height={318} alt="Album cover" />
+			<Image  loading="lazy" className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-xl max-w-[16rem] lg:max-w-xs" src="/gallery/logos/band-logo-orange.png" width={475} height={318} alt="Album cover" />
 			<Controls audioRef={audioRef} progressBarRef={progressBarRef} setTimeProgress={setTimeProgress} duration={duration} tracks={tracks} trackIndex={trackIndex} setTrackIndex={setTrackIndex} setCurrentTrack={setCurrentTrack} handleNext={handleNext} />
 			<DisplayTrack currentTrack={currentTrack} audioRef={audioRef} progressBarRef={progressBarRef} setDuration={setDuration} handleNext={handleNext} trackIndex={trackIndex} />
 			<ProgressBar progressBarRef={progressBarRef} audioRef={audioRef} timeProgress={timeProgress} duration={duration} />

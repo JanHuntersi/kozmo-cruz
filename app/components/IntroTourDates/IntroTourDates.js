@@ -23,7 +23,7 @@ export default function IntroTourDates({tourDates}) {
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 			}}
 			ref={sectionRef}>
-			<h2 className="text-white font-permanentMarker text-2xl md:text-3xl lg:text-4xl">
+			<h2 className="text-2xl md:text-3xl lg:text-4xl">
 				Prihajajoči koncerti
 			</h2>
 			<ul className="list-none">

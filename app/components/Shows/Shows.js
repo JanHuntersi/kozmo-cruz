@@ -54,8 +54,8 @@ export default function Shows({data}) {
 			ref={showsContainerRef}>
 			<Container customClasses="pb-2.5 h-full">
 				<div className="flex flex-col items-center text-white pt-11">
-					<h2 className="text-2xl font-bold lg:text-4xl">Incoming Shows &#127928;</h2>
-					<h4 className="text-base lg:text-2xl">We playin{`’`} in your town!</h4>
+					<h2 className="text-2xl font-bold lg:text-4xl ">Prihajajoči špili &#127928;</h2>
+					<h4 className="text-base lg:text-2xl">Špilamo tudi pri vas!</h4>
 				</div>
 				<div
 					className="scoller relative mt-6 h-[calc(100%-14rem)] overflow-hidden overflow-y-auto no-scrollbar"

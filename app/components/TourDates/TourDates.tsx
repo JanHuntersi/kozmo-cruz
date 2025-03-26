@@ -4,6 +4,7 @@ import { Tables } from "@/app/lib/database.types";
 import React from "react";
 
 export default function TourDates({data}) {
+  console.log("data is ",data);
   return (
     <ul className="list-none">
       {data.map((gig: Tables<"koncerti">) => (

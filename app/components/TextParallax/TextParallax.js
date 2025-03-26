@@ -24,7 +24,7 @@ const Slide = ({ left, progress, direction, color= "black" }) => {
 const Phrase = () => {
 	return (
 		<div>
-			<span className="text-[5rem] leading-none overflow-hidden uppercase  font-bold">-Kozmo Cruz</span>
+			<span className="text-[5rem] leading-none overflow-hidden uppercase font-newKidz">-Kozmo Cruz</span>
 		</div>
 	);
 };

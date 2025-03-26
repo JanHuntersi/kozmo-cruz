@@ -10,7 +10,7 @@ export const supabase = createClient<Database>(
 export async function getTourDates(){
     const {data, error} = await supabase.from("koncerti").select();
     if (error) {
-        console.error("Error fetchting tour dates");
+        console.error("Error fetchting tour dates", error);
         return [];
     }
     return data || [];

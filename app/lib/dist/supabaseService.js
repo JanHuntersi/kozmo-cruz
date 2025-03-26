@@ -48,7 +48,7 @@ function getTourDates() {
                 case 1:
                     _a = _b.sent(), data = _a.data, error = _a.error;
                     if (error) {
-                        console.error("Error fetchting tour dates");
+                        console.error("Error fetchting tour dates", error);
                         return [2 /*return*/, []];
                     }
                     return [2 /*return*/, data || []];

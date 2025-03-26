@@ -69,7 +69,7 @@ export default function PhotoGallery() {
 			}}
 			ref={sectionRef}>
 			<Container>
-				<h2 className="font-bold pb-6">Naši špili</h2>
+				<h2 className="font-bold pb-6 text-flou-orange">Naši špili</h2>
 
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
 					{galleryThumbnails.map((item, index) => {

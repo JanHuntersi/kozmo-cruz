@@ -13,8 +13,10 @@ module.exports = {
       fontFamily: {
         fkscreamerUpright: ["FKScreamer-Upright", "sans-serif"],
         permanentMarker: ["Permanent Marker", "sans-serif"],
+        //to je prej bil glavni za naslove
         poppins: ["Poppins", "sans-serif"],
-        rockSalt: ["Rock Salt", "sans-serif"]
+        rockSalt: ["Rock Salt", "sans-serif"],
+        newKidz: ["var(--font-new-kidz)", "sans-serif"]
       },
       colors: {
         "flou-orange": "#df8622",

@@ -40,7 +40,7 @@
 	}
 
 	h2 {
-		@apply text-headingMobile sm:text-headingNormal font-permanentMarker text-white;
+		@apply text-headingMobile sm:text-headingNormal font-newKidz text-flou-orange;
 	}
 
 	h5 {
