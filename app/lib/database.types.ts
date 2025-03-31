@@ -40,6 +40,7 @@ export type Database = {
           created_at: string
           date_text: string | null
           daytime_text: string | null
+          day_of_week: string | null
           event_date: string | null
           id: number
           link: string | null
@@ -50,6 +51,7 @@ export type Database = {
           created_at?: string
           date_text?: string | null
           daytime_text?: string | null
+          day_of_week: string | null
           event_date?: string | null
           id?: number
           link?: string | null
@@ -60,6 +62,7 @@ export type Database = {
           created_at?: string
           date_text?: string | null
           daytime_text?: string | null
+          day_of_week: string | null
           event_date?: string | null
           id?: number
           link?: string | null

@@ -13,7 +13,7 @@ export default function BandIdentity() {
 				<Container customClasses="px-2.5 flex items-center justify-between font-sm">
 					<Image loading="lazy"className="max-w-[6rem] h-auto " src="/gallery/logos/band-logo-orange.png" width={324} height={236} alt="Panic Panini logo" />
 					<ScrollTo toId="shows" duration={1500}>
-						<ButtonPrimary customClasses="text-sm">Live gigs</ButtonPrimary>
+						<ButtonPrimary customClasses="text-sm">Prihajajoči špili</ButtonPrimary>
 					</ScrollTo>
 				</Container>
 			</div>

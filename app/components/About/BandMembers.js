@@ -7,33 +7,28 @@ export default function BendMembers() {
     {
       src: "/gallery/band-images/osebek-3.jpg",
       name: "Andraž",
-      role: "Vokal",
-      instagram: "https://www.instagram.com/miha",
+      nickname: "(Andro)",
     },
     {
       src: "/gallery/band-images/osebek-1.jpg",
-      name: "Matic",
-      role: "Vokal",
-      instagram: "https://www.instagram.com/matic",
+      name: "Žan",
+      nickname: "(Sivko)",
     },
     {
       src: "/gallery/band-images/osebek-2.jpg",
-      name: "Tine",
-      role: "Kitara",
-      instagram: "https://www.instagram.com/tine",
+      name: "Tim",
+      nickname: "(Timči)",
     },
     
     {
       src: "/gallery/band-images/osebek-4.png",
-      name: "Luka",
-      role: "Kitara",
-      instagram: "https://www.instagram.com/luka",
+      name: "Gašper",
+      nickname: "(Štef)",
     },
     {
       src: "/gallery/band-images/osebek-5.png",
-      name: "Jan",
-      role: "Bas kitara",
-      instagram: "https://www.instagram.com/jan",
+      name: "Anže",
+      nickname: "(Anža)",
     },
   ];
 
@@ -71,11 +66,11 @@ export default function BendMembers() {
                   src={image.src}
                   width={150}
                   height={150}
-                  alt={`${image.name} - ${image.role}`}
+                  alt={`${image.name} - ${image.nickname}`}
                 />
               </div>
               <p className="pt-2 font-bold text-3xl ">{image.name}</p>
-              <p className="text-center text-xl ">{image.role}</p>
+              <p className="text-center text-xl ">{image.nickname}</p>
             </a>
           ))}
         </div>

@@ -15,10 +15,13 @@ export default function TourDates({ data }) {
 						<div className="flex flex-col justify-center items-center date w-[3.4rem] h-[3.4rem] leading-tight p-2 bg-flou-orange rounded-md lg:mr-12 lg:w-[5.3rem] lg:h-[5.3rem]">
 							<p className="font-bold text-center uppercase">{gig.date_text}</p>
 						</div>
-						<div className=" text-white font-semibold leading-tight lg:ml-[20%]">
+						{(gig.daytime_text || gig.event_date) && (
+							<div className=" text-white font-semibold leading-tight lg:ml-[20%]">
+							<p>{gig.day_of_week}</p>
 							<p>{gig.daytime_text}</p>
-							<p>{gig.event_date}</p>
 						</div>
+						) 
+						}
 					</div>
 					<div className="flex flex-col mt-2.5 items-center text-center text-base justify-between w-[60%] md:text-xl lg:flex-row lg:text-left lg:w-6/12 lg:mt-0 lg:text-2xl">
 						<div className="text-white font-semibold leading-tight">
