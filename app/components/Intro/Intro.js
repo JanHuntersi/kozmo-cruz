@@ -27,7 +27,7 @@ export default function Intro({ data }) {
 	return (
 		<section
 			id="intro"
-			className={`relative flex flex-col items-center h-[100svh] w-full overflow-hidden max-h-[93rem] min-h-[43rem] lg:h-screen lg:flex-row lg:justify-start`}
+			className={`relative flex flex-col items-center h-[100svh] w-full overflow-hidden max-h-[93rem] min-h-[43rem] lg:h-screen `}
 			ref={sectionRef}>
 			<BandIdentity />
 			<div className="absolute w-full h-full top-0 left-0">
@@ -49,7 +49,7 @@ export default function Intro({ data }) {
 				</video>
 			</div>
 			{(data &&  data.length > 0) &&
-				<Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:justify-end lg:items-end">
+				<Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
 					<IntroTourDates tourDates={data}/>
 				</Container>
 			}

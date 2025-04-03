@@ -16,14 +16,14 @@ export default function IntroTourDates({tourDates}) {
 	return (
 		
 		<div
-			className={`flex flex-col justify-center items-center lg:justify-end lg:items-end`}
+			className={`flex flex-col justify-center items-center `}
 			style={{
 				transform: isInView ? "none" : "translateY(-100px)",
 				opacity: isInView ? 1 : 0,
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 			}}
 			ref={sectionRef}>
-			<h2 className="text-2xl md:text-3xl lg:text-4xl">
+			<h2 className="text-center text-2xl md:text-3xl lg:text-4xl pb-3">
 				Prihajajoči koncerti
 			</h2>
 			<ul className="list-none">
@@ -61,9 +61,9 @@ export default function IntroTourDates({tourDates}) {
 			</ul>
 			
 			<div className="gap-x-3 lg:flex">
-				<div className=" hidden lg:block">
+				<div>
 					<ScrollTo toId="shows" duration={1500}>
-						<ButtonPrimary>Več o koncertih</ButtonPrimary>
+						<ButtonPrimary>Več špilov</ButtonPrimary>
 					</ScrollTo>
 				</div>
 			</div>
