@@ -40,7 +40,6 @@ export default function Intro({ data }) {
 					poster="/first-frame.png"
 					className="object-cover w-full h-full z-10"
 					playsInline>
-					<source src="./video-band.webm" type="video/webm" />
 					<source src="./video-band.mp4" type="video/mp4" />
 					<p>
 						Your browser doesn&#8217;t support HTML video. Here is a
@@ -49,7 +48,7 @@ export default function Intro({ data }) {
 				</video>
 			</div>
 			{(data &&  data.length > 0) &&
-				<Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+				<Container customClasses="z-20 flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
 					<IntroTourDates tourDates={data}/>
 				</Container>
 			}

@@ -8,9 +8,7 @@ import { ArrowBottom } from "@/app/svg-icons/svg-icons";
 
 export default function Shows({data}) {
 	const [isScrollMoreVisible, setIsScrollMoreVisible] = useState(false);
-	const showsContainerRef = useRef(null);
 	const scrollableDivRef = useRef(null);
-	const isInView = useInView(showsContainerRef, { once: true });
 
 	const clickHandler = () => {
 		scrollableDivRef.current.scrollTo({
@@ -45,13 +43,7 @@ export default function Shows({data}) {
 	return (
 		<section
 			id="shows"
-			className={`w-full relative mt-16 bg-incoming-shows bg-cover bg-no-repeat backdrop-opacity-10 bg-center h-[32rem] lg:h-screen lg:min-h-[45rem] lg:max-h-[49rem]`}
-			style={{
-				transform: isInView ? "none" : "translateY(100px)",
-				opacity: isInView ? 1 : 0,
-				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-			}}
-			ref={showsContainerRef}>
+			className={`w-full relative mt-16 bg-incoming-shows bg-cover bg-no-repeat backdrop-opacity-10 bg-center h-[32rem] lg:h-screen lg:min-h-[45rem] lg:max-h-[49rem]`}>
 			<Container customClasses="pb-2.5 h-full">
 				<div className="flex flex-col items-center text-white pt-11">
 					<h2 className="text-2xl font-bold lg:text-4xl ">Prihajajoči špili &#127928;</h2>

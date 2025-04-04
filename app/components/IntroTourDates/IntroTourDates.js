@@ -60,11 +60,13 @@ export default function IntroTourDates({tourDates}) {
 				})}
 			</ul>
 			
-			<div className="gap-x-3 lg:flex">
+			<div className="gap-x-3 lg:flex z-15">
 				<div>
+				<ButtonPrimary>
 					<ScrollTo toId="shows" duration={1500}>
-						<ButtonPrimary>Več špilov</ButtonPrimary>
+					Več špilov
 					</ScrollTo>
+					</ButtonPrimary>
 				</div>
 			</div>
 		</div>

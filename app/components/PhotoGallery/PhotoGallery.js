@@ -60,7 +60,7 @@ export default function PhotoGallery() {
 
 	return (
 		<section
-			id="photo-gallery"
+			id="concerts"
 			className={`w-full mt-8 pb-2 lg:mt-28 lg:pb-28 `}
 			style={{
 				transform: isInView ? "none" : "translateY(100px)",
