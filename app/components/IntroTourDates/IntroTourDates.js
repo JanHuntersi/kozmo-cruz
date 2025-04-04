@@ -24,7 +24,7 @@ export default function IntroTourDates({tourDates}) {
 			}}
 			ref={sectionRef}>
 			<h2 className="text-center text-2xl md:text-3xl lg:text-4xl pb-3">
-				Prihajajoči koncerti
+				Prihajajoči špili
 			</h2>
 			<ul className="list-none">
 				{tourDates.map((gig) => {
