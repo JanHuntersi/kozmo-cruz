@@ -41,7 +41,7 @@ export default function TextParallax() {
 
 	return (
 		<section
-			className="overflow-hidden mt-8 "
+			className="overflow-hidden"
 			style={{
 				transform: isInView ? "none" : "translateY(50px)",
 				opacity: isInView ? 1 : 0,

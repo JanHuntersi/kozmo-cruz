@@ -27,7 +27,7 @@ export default function Intro({ data }) {
 	return (
 		<section
 			id="intro"
-			className={`relative flex flex-col items-center h-[100svh] w-full overflow-hidden max-h-[93rem] min-h-[43rem] lg:h-screen `}
+			className={`relative flex flex-col items-center h-[100vh] w-full overflow-hidden max-h-[93rem] min-h-[43rem] lg:h-screen `}
 			ref={sectionRef}>
 			<BandIdentity />
 			<div className="absolute w-full h-full top-0 left-0">

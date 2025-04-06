@@ -9,7 +9,7 @@ export default function BandIdentity() {
 		<>
 			<div className="h-full w-full flex flex-col justify-between grow-0 shrink-0 z-10 sm:border-y-[1.25rem] bg-inherit  sm:border-flou-orange border-none opacity-1 ">
 				<div className="logo-container w-100 md:hidden  text-flou-orange flex justify-center items-center flex-row gap-5 p-2 font-bold text-lg font-newKidz">
-					<Image loading="lazy" className="px-12 py-3 max-w-[18.75rem] h-auto" src="/gallery/logos/band-logo-shorter.png" width={324} height={236} alt="Panic Panini logo" />
+					<Image priority   className="px-12 py-3 max-w-[18.75rem] h-auto" src="/gallery/logos/band-logo-shorter.png" width={324} height={236} alt="Panic Panini logo" />
 				</div>
 
 				<div className="logo-container w-100 hidden   text-flou-orange md:flex justify-center items-center flex-row gap-5 p-2 font-bold text-lg font-newKidz">
@@ -23,7 +23,7 @@ export default function BandIdentity() {
 							NOV DAN
 						</ScrollTo>
 					</div>
-					<Image loading="lazy" className="px-12 py-3 max-w-[18.75rem] h-auto" src="/gallery/logos/band-logo-shorter.png" width={324} height={236} alt="Panic Panini logo" />
+					<Image priority className="px-12 py-3 max-w-[18.75rem] h-auto" src="/gallery/logos/band-logo-shorter.png" width={324} height={236} alt="Panic Panini logo" />
 					<div className="px-2 mb-1 cursor-pointer">
 						<ScrollTo toId="concerts" duration={1500}>
 							KONCERTI

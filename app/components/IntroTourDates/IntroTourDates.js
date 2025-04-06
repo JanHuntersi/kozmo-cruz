@@ -43,7 +43,7 @@ export default function IntroTourDates({tourDates}) {
 									</p>
 								</div>
 								<div className="text-white text-right leading-none md:mr-12">
-									<p>{gig.daytime_text}</p>
+									<p>{gig.start_time_text}</p>
 									<p>{gig.venue}</p>
 									<div className="flex justify-end md:hidden">
 										<MapMapper extraClasses="mr-2" />

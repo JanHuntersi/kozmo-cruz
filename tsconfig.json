@@ -4,7 +4,8 @@
     "paths": {
       "@/app/*": ["app/*"],
       "@/components/*": ["components/*"],
-      "@/global-components/*": ["app/global-components/*"]
+      "@/global-components/*": ["app/global-components/*"],
+      "@/data/*": ["app/data/*"]
     },
     "lib": [
       "dom",

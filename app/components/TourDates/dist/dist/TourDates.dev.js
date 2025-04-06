@@ -8,29 +8,6 @@ var react_1 = require("react");
 
 function TourDates(_a) {
   var data = _a.data;
-  /*
-  const [tourDates, setTourDates] = useState<Tables<"koncerti">[]>([]);
-     useEffect(() => {
-    async function fetchTourDates() {
-      console.log("Fetching tour dates...");
-         try {
-        const res = await fetch("/api/tourDates");
-        const data = await res.json();
-           console.log("Fetched data:", data); // ✅ Preveri, kaj API vrača
-           if (!Array.isArray(data)) {
-          console.error("API did not return an array!", data);
-          setTourDates([]);
-          return;
-        }
-           setTourDates(data);
-      } catch (err) {
-        console.error("Error fetching tour dates", err);
-      }
-    }
-       fetchTourDates();
-  }, []);
-  */
-
   return react_1["default"].createElement("ul", {
     className: "list-none"
   }, data.map(function (gig) {
@@ -43,17 +20,21 @@ function TourDates(_a) {
       className: "flex flex-col justify-center items-center date w-[3.4rem] h-[3.4rem] leading-tight p-2 bg-flou-orange rounded-md lg:mr-12 lg:w-[5.3rem] lg:h-[5.3rem]"
     }, react_1["default"].createElement("p", {
       className: "font-bold text-center uppercase"
-    }, gig.date_text)), react_1["default"].createElement("div", {
+    }, gig.date_text)), (gig.start_time_text || gig.event_date) && react_1["default"].createElement("div", {
       className: " text-white font-semibold leading-tight lg:ml-[20%]"
-    }, react_1["default"].createElement("p", null, gig.daytime_text), react_1["default"].createElement("p", null, gig.event_date))), react_1["default"].createElement("div", {
+    }, react_1["default"].createElement("p", null, gig.day_of_week), react_1["default"].createElement("p", null, gig.start_time_text))), react_1["default"].createElement("div", {
       className: "flex flex-col mt-2.5 items-center text-center text-base justify-between w-[60%] md:text-xl lg:flex-row lg:text-left lg:w-6/12 lg:mt-0 lg:text-2xl"
     }, react_1["default"].createElement("div", {
       className: "text-white font-semibold leading-tight"
-    }, react_1["default"].createElement("p", null, gig.venue), react_1["default"].createElement("p", null, gig.city)), react_1["default"].createElement("div", {
+    }, react_1["default"].createElement("p", null, gig.venue), react_1["default"].createElement("p", null, gig.city)), gig.link && react_1["default"].createElement("div", {
       className: "ml-2.5 lg:ml-auto"
     }, react_1["default"].createElement(ButtonPrimary_1["default"], {
       customClasses: "text-xs md:text-sm lg:text-base"
-    }, "Get Ticket"))));
+    }, react_1["default"].createElement("a", {
+      target: "_blank",
+      rel: "noopener noreferrer",
+      href: gig.link
+    }, "Get ticket")))));
   }));
 }
 

@@ -3,14 +3,11 @@ import About from "./components/About/About";
 import Listen from "./components/Listen/Listen";
 import BandMembers from "./components/About/BandMembers";
 import ContactUs from "./components/ContactUs/ContactUs";
-import PhotoGallery from "./components/PhotoGallery/PhotoGallery";
 import TextParallax from "./components/TextParallax/TextParallax";
 import Shows from "./components/Shows/Shows";
-import { getTourDates } from "./lib/supabaseService";
-import { getCachedTourDates } from "./lib/cache";
+import tourDates from '@/data/tourDates.json';
 
 export default async function Home() {
-	const tourDates = await getCachedTourDates(getTourDates);
 
 	return (
 		<>
@@ -22,7 +19,7 @@ export default async function Home() {
 				<Shows data={tourDates}/>
 				<BandMembers />
 				<TextParallax />
-				<PhotoGallery />
+				{/*<PhotoGallery />*/}
 			</main>
 		</>
 	);

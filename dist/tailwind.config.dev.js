@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "album-cover": "url('/panic-panini-album.jpg')",
-        "incoming-shows": "url('/gallery/band-images/group-incoming-shows.JPEG')",
+        "incoming-shows": "url('/gallery/band-images/group.JPEG')",
         "hero-pattern": "url('/pattern.png')"
       },
       fontFamily: {

@@ -1,0 +1,21 @@
+[
+    {
+      "city": "Radeče",
+      "venue": "Bazen Radeče",
+      "event_date": "2025-08-08",
+      "date_text": "8 AUG",
+      "start_time_text": "21:00",
+      "day_of_week": "Petek",
+      "link": null
+    },
+    {
+      "city": "Slovenske Konjice",
+      "venue": "MC PATRIOT",
+      "event_date": "2025-9-05",
+      "date_text": "9 MAJ",
+      "start_time_text": "21:00",
+      "day_of_week": "Petek",
+      "link": null
+    }
+  ]
+  
