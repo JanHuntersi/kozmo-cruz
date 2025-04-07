@@ -2,15 +2,33 @@ import Footer from "./components/Footer/Footer";
 import "./globals.css";
 import localFont from 'next/font/local'
 
-//TODO SEO optimization
+//TODO favicon !
 
 export const metadata = {
 	title: "Kozmo Cruz",
-	description: "Kozmo-Cruz Rock Band iz Slovenije.", 
-	verification: {
-		//google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
+	description: "Kozmo Cruz je petčlanska rock skupina iz Slovenije, ki ustvarja po lastnih glasbenih pravilih.",
+	keywords: ["Kozmo Cruz", "rock band", "glasbena skupina", "glasba Slovenija", "koncerti", "indie rock"],
+	authors: [{ name: "Kozmo Cruz" }],
+	creator: "Kozmo Cruz",
+	openGraph: {
+	  title: "Kozmo Cruz – Glasbena skupina iz Slovenije",
+	  description: "Če zveni dobro, potem je prav. Spoznaj petčlansko rock skupino Kozmo Cruz.",
+	  url: "https://kozmo-cruz.si",
+	  siteName: "Kozmo Cruz",
+	  images: [
+		{
+		  url: "/gallery/logos/band-logo-shorter.png", 
+		  width: 1200,
+		  height: 630,
+		  alt: "Kozmo Cruz bend promo slika",
+		},
+	  ],
+	  type: "website",
+	  locale: "sl_SI",
 	},
-};
+	metadataBase: new URL("https://kozmo-cruz.si"),
+  };
+  
 
 const newKidz = localFont({
 	src: "./fonts/new_kidz.ttf",

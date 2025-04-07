@@ -40,7 +40,7 @@
 	}
 
 	h2 {
-		@apply text-headingMobile sm:text-headingNormal font-newKidz text-flou-orange;
+		@apply text-headingMobile sm:text-headingNormal font-newKidz text-flou-orange sm:leading-[1.1];
 	}
 
 	h5 {
