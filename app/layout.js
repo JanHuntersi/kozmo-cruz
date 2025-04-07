@@ -6,13 +6,13 @@ import localFont from 'next/font/local'
 
 export const metadata = {
 	title: "Kozmo Cruz",
-	description: "Kozmo Cruz je petčlanska rock skupina, ki ustvarja po lastnih glasbenih pravilih.",
+	description: "Kozmo Cruz je pet članska rock skupina, ki ustvarja po lastnih glasbenih pravilih.",
 	keywords: ["Kozmo Cruz", "rock band", "glasbena skupina", "glasba Slovenija", "koncerti", "indie rock"],
 	authors: [{ name: "Kozmo Cruz" }],
 	creator: "Kozmo Cruz",
 	openGraph: {
 	  title: "Kozmo Cruz",
-	  description: "Če zveni dobro, potem je prav. Spoznaj petčlansko rock skupino Kozmo Cruz.",
+	  description: "Če zveni dobro, potem je prav. Spoznaj pet člansko rock skupino Kozmo Cruz.",
 	  url: "https://kozmo-cruz.si",
 	  siteName: "Kozmo Cruz",
 	  images: [

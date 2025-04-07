@@ -35,7 +35,7 @@ export default function About() {
 				<div className="hidden lg:block w-full  lg:max-w-lg xl:max-w-xl lg:relative">
 					<Image
 						className="w-full object-cover lg:rounded-md"
-						src="/bend.jpg"
+						src="/gallery/band-images/band-stairs.png"
 						width={750}
 						height={533}
 						alt="Holding guitar"
@@ -46,7 +46,7 @@ export default function About() {
 			<div className="block lg:hidden w-full pt-16 ">
 				<Image
 					className="w-full object-cover"
-					src="/bend.jpg"
+					src="/gallery/band-images/band-stairs.png"
 					width={750}
 					height={533}
 					alt="Holding guitar"

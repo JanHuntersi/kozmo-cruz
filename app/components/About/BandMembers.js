@@ -5,24 +5,24 @@ import Image from "next/image";
 export default function BendMembers() {
   const images = [
     {
-      src: "/gallery/band-images/andraz.jpg",
+      src: "/gallery/band-images/andraz.png",
       name: "Andraž",
     },
     {
-      src: "/gallery/band-images/zan.jpg",
+      src: "/gallery/band-images/zan.png",
       name: "Žan",
     },
     {
-      src: "/gallery/band-images/tim.jpg",
+      src: "/gallery/band-images/tim.png",
       name: "Tim",
     },
     
     {
-      src: "/gallery/band-images/gasper.jpg",
+      src: "/gallery/band-images/gasper.png",
       name: "Gašper",
     },
     {
-      src: "/gallery/band-images/anze.jpg",
+      src: "/gallery/band-images/anze.png",
       name: "Anže",
     },
   ];
