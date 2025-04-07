@@ -19,8 +19,9 @@ export default async function Home() {
 				<Listen />
 				<Shows data={tourDates}/>
 				<BandMembers />
-				<TextParallax />
 				<BookingManagement />
+				<TextParallax />
+			
 				{/*<PhotoGallery />*/}
 			</main>
 		</>

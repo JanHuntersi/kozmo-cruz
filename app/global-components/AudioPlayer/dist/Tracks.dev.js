@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.tracks = void 0;
 var tracks = [{
   title: "Novo Jutro",
-  src: "./mp3-songs/novo-jutro.wav",
+  src: "./mp3-songs/novo-jutro.mp3",
   author: "Kozmo Cruz"
 }];
 exports.tracks = tracks;

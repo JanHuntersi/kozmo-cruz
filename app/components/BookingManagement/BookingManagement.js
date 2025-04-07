@@ -27,12 +27,7 @@ export default function BookingManagement() {
                                 kozmocruz.band@gmail.com
                             </a>
                         </div>
-                        <div className="mt-6 text-xl text-center text-white">
-                            Kontaktna oseba: <span className="font-semibold">Andraž</span><br />
-                            <a href="tel:+38670678198" className="underline hover:text-flou-orange">
-                                +386 70 678 198
-                            </a>
-                        </div>
+                        
                     </Container>
                 </div>
             </div>

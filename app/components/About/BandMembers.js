@@ -5,24 +5,24 @@ import Image from "next/image";
 export default function BendMembers() {
   const images = [
     {
-      src: "/gallery/band-images/osebek-3.jpg",
+      src: "/gallery/band-images/andraz.jpg",
       name: "Andraž",
     },
     {
-      src: "/gallery/band-images/osebek-1.jpg",
+      src: "/gallery/band-images/zan.jpg",
       name: "Žan",
     },
     {
-      src: "/gallery/band-images/osebek-2.jpg",
+      src: "/gallery/band-images/tim.jpg",
       name: "Tim",
     },
     
     {
-      src: "/gallery/band-images/osebek-4.png",
+      src: "/gallery/band-images/gasper.jpg",
       name: "Gašper",
     },
     {
-      src: "/gallery/band-images/osebek-5.png",
+      src: "/gallery/band-images/anze.jpg",
       name: "Anže",
     },
   ];
@@ -34,7 +34,7 @@ export default function BendMembers() {
     >
       <div className="flex flex-col items-center mx-auto px-4 max-w-[200rem]">
         <h2 className="font-bold pb-6 text-flou-orange ">
-          KRUZERJI
+          CRUZERJI
         </h2>
         <div
           className="

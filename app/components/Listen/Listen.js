@@ -23,7 +23,7 @@ export default function Listen() {
 					}}>
 					<h2 className=" font-bold pt-3 lg:pt-6 pb-6">Novo Jutro Nov Dan</h2>
 					<p>
-					Z novim dnevom prihaja tudi nova zgodba. Skupina se kot feniks dviga iz pepela preteklosti, prepleta stare korenine z drznimi zvoki prihodnosti in vabi poslušalce na pot preobrazbe.
+					Novo jutro, nov dan. Novi mi! Petek je, mi smo brez skrbi! Tebe pa spet ni. Poslušaj novi single in pridi cruzat z nami!
 					</p>
 					<div className="flex row space-x-4 mt-4 justify-center lg:justify-start ">
 						<Spotify extraClasses="fill-amber-400" />
