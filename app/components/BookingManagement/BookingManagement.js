@@ -11,7 +11,7 @@ export default function BookingManagement() {
     return (
         <section
             id="booking"
-            className={`flex bg-black justify-center items-center w-full  mx-auto  lg:pt-28 pb-16 lg:pb-28 `}>
+            className={`flex bg-black justify-center items-center w-full  mx-auto  lg:pt-28 pt-16 pb-16 lg:pb-28 `}>
             <div
                 className="flex justify-center flex-col lg:items-center "
                 ref={textRef}
