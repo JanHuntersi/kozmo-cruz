@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kozmo-cruz.si
+
+# Sitemaps
+Sitemap: https://kozmo-cruz.si/sitemap.xml
