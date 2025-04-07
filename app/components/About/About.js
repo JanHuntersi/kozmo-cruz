@@ -23,7 +23,7 @@ export default function About() {
 						opacity: isInView ? 1 : 0,
 						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 					}}>
-					<h2 className="font- font-bold  pb-6">Naša zgodba</h2>
+					<h2 className="font- font-bold  pb-6">Kdo je KOZMO CRUZ </h2>
 					<p >
 						KOZMO CRUZ je petčlanska skupina, ki z avtorsko glasbo sledi preprostemu pravilu – v glasbi ni pravil! Če zveni dobro, potem je dobro. Njihove pesmi so večinoma v slovenščini, saj skozi materni jezik najlažje izrazijo svoja čustva.
 					</p>

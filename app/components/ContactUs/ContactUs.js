@@ -22,7 +22,7 @@ export default function ContactUs() {
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}>
 				<div className="flex flex-col max-w-4xl text-center xs:p-15 lg:p-0">
-					<h2 className="font-bold pb-6  leading-[50px] ">Hej, mi smo tudi tukaj</h2>
+					<h2 className="font-bold pb-6  leading-[50px] ">Hej, mi smo KOZMO CRUZ</h2>
 					<Container customClasses="flex-row justify-center items-center">
 						<div className=" text-center">
 							<p>sledite nam lahko na teh omrežij</p>
@@ -40,15 +40,6 @@ export default function ContactUs() {
 							</a>
 							<a href="https://www.instagram.com/kozmocruz/#" target="_blank" rel="noopener noreferrer">
 							<Instagram />
-							</a>
-						</div>
-						<div className="mt-9 text-2xl text-center">
-							<p className="pb-1">Management & Booking</p>
-							<a
-								href="mailto:kozmocruz.band@gmail.com?subject=Pozdrav&body=Želim se povezati z vašim bendom!"
-								className="text-white underline hover:text-white"
-							>
-								kozmocruz.band@gmail.com
 							</a>
 						</div>
 					</Container>

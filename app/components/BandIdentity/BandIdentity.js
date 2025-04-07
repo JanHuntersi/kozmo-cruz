@@ -19,19 +19,19 @@ export default function BandIdentity() {
 						</ScrollTo>
 					</div>
 					<div className="px-2 mb-1 cursor-pointer">
-						<ScrollTo toId="listen" duration={1500}>
-							NOV DAN
+						<ScrollTo toId="contacts" duration={1500}>
+							KONTAKT
 						</ScrollTo>
 					</div>
 					<Image priority className="px-12 py-3 max-w-[18.75rem] h-auto" src="/gallery/logos/band-logo-shorter.png" width={324} height={236} alt="Panic Panini logo" />
 					<div className="px-2 mb-1 cursor-pointer">
-						<ScrollTo toId="concerts" duration={1500}>
+						<ScrollTo toId="shows" duration={1500}>
 							KONCERTI
 						</ScrollTo>
 					</div>
 					<div className="px-2 mb-1 cursor-pointer">
-						<ScrollTo toId="contacts" duration={1500}>
-							KONTAKT
+						<ScrollTo toId="booking" duration={1500}>
+Booking
 						</ScrollTo>
 					</div>
 				</div>

@@ -21,7 +21,7 @@ export default function Listen() {
 						opacity: isInView ? 1 : 0,
 						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 					}}>
-					<h2 className=" font-bold pt-3 lg:pt-6 pb-6">Nov Dan</h2>
+					<h2 className=" font-bold pt-3 lg:pt-6 pb-6">Novo Jutro Nov Dan</h2>
 					<p>
 					Z novim dnevom prihaja tudi nova zgodba. Skupina se kot feniks dviga iz pepela preteklosti, prepleta stare korenine z drznimi zvoki prihodnosti in vabi poslušalce na pot preobrazbe.
 					</p>

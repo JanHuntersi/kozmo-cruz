@@ -6,6 +6,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import TextParallax from "./components/TextParallax/TextParallax";
 import Shows from "./components/Shows/Shows";
 import tourDates from '@/data/tourDates.json';
+import BookingManagement from "./components/BookingManagement/BookingManagement";
 
 export default async function Home() {
 
@@ -19,6 +20,7 @@ export default async function Home() {
 				<Shows data={tourDates}/>
 				<BandMembers />
 				<TextParallax />
+				<BookingManagement />
 				{/*<PhotoGallery />*/}
 			</main>
 		</>

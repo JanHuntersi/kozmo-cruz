@@ -7,28 +7,23 @@ export default function BendMembers() {
     {
       src: "/gallery/band-images/osebek-3.jpg",
       name: "Andraž",
-      nickname: "(Andro)",
     },
     {
       src: "/gallery/band-images/osebek-1.jpg",
       name: "Žan",
-      nickname: "(Sivko)",
     },
     {
       src: "/gallery/band-images/osebek-2.jpg",
       name: "Tim",
-      nickname: "(Timči)",
     },
     
     {
       src: "/gallery/band-images/osebek-4.png",
       name: "Gašper",
-      nickname: "(Štef)",
     },
     {
       src: "/gallery/band-images/osebek-5.png",
       name: "Anže",
-      nickname: "(Anža)",
     },
   ];
 
@@ -39,7 +34,7 @@ export default function BendMembers() {
     >
       <div className="flex flex-col items-center mx-auto px-4 max-w-[200rem]">
         <h2 className="font-bold pb-6 text-flou-orange ">
-          Frajeri
+          KRUZERJI
         </h2>
         <div
           className="
@@ -51,27 +46,35 @@ export default function BendMembers() {
             mt-8
           "
         >
-          {images.map((image, index) => (
-            <a
-              key={index}
-              href={image.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-center gap-x-4 gap-y-1 transition-transform transform hover:scale-105 hover:bg-flou-orange rounded-lg p-4"
-            >
-              <div className="w-[150px] h-[150px] rounded-full overflow-hidden aspect-square">
-                <Image
-                  className="object-cover"
-                  src={image.src}
-                  width={150}
-                  height={150}
-                  alt={`${image.name} - ${image.nickname}`}
-                />
-              </div>
-              <p className="pt-2 font-bold text-3xl ">{image.name}</p>
-              <p className="text-center text-xl ">{image.nickname}</p>
-            </a>
-          ))}
+         {images.map((image, index) => {
+  const isLastOdd =
+    images.length % 2 === 1 && index === images.length - 1;
+
+  return (
+    <a
+      key={index}
+      href={image.instagram}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`flex flex-col items-center gap-x-4 gap-y-1 transition-transform transform hover:scale-105 hover:bg-flou-orange rounded-lg p-4 ${
+        isLastOdd ? 'col-span-2 md:col-span-1 justify-self-center' : ''
+      }`}
+    >
+      <div className="w-[150px] h-[150px] rounded-full overflow-hidden aspect-square">
+        <Image
+          className="object-cover"
+          src={image.src}
+          width={150}
+          height={150}
+          alt={`${image.name} - ${image.nickname}`}
+        />
+      </div>
+      <p className="pt-2 font-bold text-3xl ">{image.name}</p>
+      <p className="text-center text-xl ">{image.nickname}</p>
+    </a>
+  );
+})}
+
         </div>
       </div>
     </section>

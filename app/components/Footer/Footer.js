@@ -25,7 +25,6 @@ export default function Footer() {
 						
 						<div className="text-sm text-center mt-3 mb-3">
 							<p>© 2024 Kozmo-Cruz. Vse pravice pridržane.</p>
-							<p className="pt-2 text-sm">Made by Jancii</p>
 						</div>
 
 
