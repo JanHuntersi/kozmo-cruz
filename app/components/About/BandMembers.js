@@ -12,17 +12,17 @@ export default function BendMembers() {
     {
       src: "/gallery/band-images/zan.png",
       name: "Žan",
-      role: "El. kitara"
+      role: "Kitara"
     },
     {
       src: "/gallery/band-images/tim.png",
       name: "Tim",
-      role: "El. kitara"
+      role: "Kitara"
     },
     {
       src: "/gallery/band-images/gasper.png",
       name: "Gašper",
-      role: "Bas/bas kitara"
+      role: "Bas kitara"
     },
     {
       src: "/gallery/band-images/anze.png",
