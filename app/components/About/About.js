@@ -25,10 +25,10 @@ export default function About() {
 					}}>
 					<h2 className="font- font-bold  pb-6">Kdo je KOZMO CRUZ </h2>
 					<p >
-						KOZMO CRUZ je petčlanska skupina, ki z avtorsko glasbo sledi preprostemu pravilu – v glasbi ni pravil! Če zveni dobro, potem je dobro. Njihove pesmi so večinoma v slovenščini, saj skozi materni jezik najlažje izrazijo svoja čustva.
+						KOZMO CRUZ smo petčlanska skupina, ki z avtorsko glasbo sledimo preprostemu pravilu – v glasbi ni pravil! Če zveni dobro, potem je dobro. Njihove pesmi so večinoma v slovenščini, saj skozi materni jezik najlažje izrazijo svoja čustva.
 					</p>
 					<p className="pt-8">
-						Kmalu izdajajo prvi singel, sledil pa bo mini album (EP), s katerim želijo predstaviti svojo glasbeno vizijo. Čeprav so novi na sceni, imajo kot posamezniki že odrske in studijske izkušnje, ki jih bodo nadgradili na koncertih po Sloveniji. Strast do ustvarjanja, energija in skupni cilji jih ženejo naprej – na vedno nove odre in v nove glasbene podvige.
+						Izdan je že prvi singel, sledil pa bo mini album (EP), s katerim želimo predstaviti svojo glasbeno vizijo. Čeprav novi na sceni, imamo kot posamezniki že odrske in studijske izkušnje, ki jih bodo nadgradili na koncertih po Sloveniji. Strast do ustvarjanja, energija in skupni cilji nas ženejo naprej – na vedno nove odre in v nove glasbene podvige.
 					</p>
 				</div>
 				{/* Slika za večje zaslone */}

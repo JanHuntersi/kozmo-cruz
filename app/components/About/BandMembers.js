@@ -7,23 +7,27 @@ export default function BendMembers() {
     {
       src: "/gallery/band-images/andraz.png",
       name: "Andraž",
+      role: "Vokal"
     },
     {
       src: "/gallery/band-images/zan.png",
       name: "Žan",
+      role: "El. kitara"
     },
     {
       src: "/gallery/band-images/tim.png",
       name: "Tim",
+      role: "El. kitara"
     },
-    
     {
       src: "/gallery/band-images/gasper.png",
       name: "Gašper",
+      role: "Bas/bas kitara"
     },
     {
       src: "/gallery/band-images/anze.png",
       name: "Anže",
+      role: "Bobni"
     },
   ];
 
@@ -71,6 +75,7 @@ export default function BendMembers() {
       </div>
       <p className="pt-2 font-bold text-3xl ">{image.name}</p>
       <p className="text-center text-xl ">{image.nickname}</p>
+      <p className="text-center text-xl ">({image.role})</p>
     </a>
   );
 })}

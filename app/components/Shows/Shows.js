@@ -65,7 +65,7 @@ export default function Shows({ data }) {
         <div className="absolute inset-0 bg-hero-pattern bg-repeat mix-blend-overlay"></div>
       </div>
 
-      {/* 📦 Vsebina nad videom */}
+      {/* Vsebina nad videom */}
       <Container customClasses="relative z-10 pb-2.5 h-full">
         <div className="flex flex-col items-center text-white pt-11">
           <h2 className="text-2xl font-bold lg:text-4xl">Prihajajoči špili</h2>

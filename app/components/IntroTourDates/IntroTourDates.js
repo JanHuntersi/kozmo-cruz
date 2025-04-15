@@ -36,7 +36,7 @@ export default function IntroTourDates({tourDates}) {
 								href={gig.link ?? "#"}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="flex items-center w-full hover:text-green-500">
+								className="flex items-center w-full justify-between">
 								<div className="flex flex-col justify-center items-center date w-[4.7rem] h-[4.7rem] p-2 bg-flou-orange mr-4 text-2xl rounded-md border-8 border-white md:mr-12 lg:w-[5.5rem] lg:h-[5.5rem]">
 									<p className="font-bold text-xl text-white leading-none text-center uppercase lg:text-3xl">
 										{gig.date_text}
