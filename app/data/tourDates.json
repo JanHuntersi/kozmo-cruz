@@ -11,6 +11,16 @@
   },
   {
     "id": 1,
+    "city": "Maribor",
+    "venue": "KMŠ oder (Festival Lent)",
+    "event_date": "2025-21-06",
+    "date_text": "21 JUN",
+    "start_time_text": "21:30",
+    "day_of_week": "Sobota",
+    "link": null
+  },
+  {
+    "id": 2,
     "city": "Radeče",
     "venue": "Bazen Radeče",
     "event_date": "2025-08-08",
