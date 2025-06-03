@@ -34,7 +34,7 @@ export default function BendMembers() {
   return (
     <section
       id="about"
-      className="bg-black relative flex items-center justify-center w-full py-16 mx-auto mt-16 lg:mt-0  pt-16 lg:pt-28 lg:pb-28"
+      className="bg-black relative flex items-center justify-center w-full py-16 mx-auto   pt-16 lg:pt-28 lg:pb-28"
     >
       <div className="flex flex-col items-center mx-auto px-4 max-w-[200rem]">
         <h2 className="font-bold pb-6 text-flou-orange ">

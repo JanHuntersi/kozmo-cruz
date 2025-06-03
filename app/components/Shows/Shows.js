@@ -72,7 +72,7 @@ export default function Shows({ data }) {
         </div>
 
         <div
-          className="scroller relative mt-6 h-[calc(100%-14rem)] overflow-hidden overflow-y-auto no-scrollbar"
+           className="scroller relative mt-6 h-[calc(100%-14rem)] overflow-hidden overflow-y-auto sm:no-scrollbar"
           ref={scrollableDivRef}
         >
           <TourDates data={data} />

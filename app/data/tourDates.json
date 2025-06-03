@@ -1,15 +1,5 @@
 [
   {
-    "id": 0,
-    "city": "Slovenske Konjice",
-    "venue": "MC PATRIOT",
-    "event_date": "2025-9-05",
-    "date_text": "9 MAJ",
-    "start_time_text": "22:00",
-    "day_of_week": "Petek",
-    "link": null
-  },
-  {
     "id": 1,
     "city": "Maribor",
     "venue": "KMŠ oder (Festival Lent)",

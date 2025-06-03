@@ -33,18 +33,23 @@ export default function IntroTourDates({tourDates}) {
 							key={gig.id}
 							className="flex items-center my-10 justify-between text-xl md:justify-end md:text-2xl lg:text-2xl xl:text-3xl">
 							<a
-								href={gig.link ?? "#"}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center w-full justify-between">
-								<div className="flex flex-col justify-center items-center date w-[4.7rem] h-[4.7rem] p-2 bg-flou-orange mr-4 text-2xl rounded-md border-8 border-white md:mr-12 lg:w-[5.5rem] lg:h-[5.5rem]">
+							{...(gig.link
+								? {
+									href: gig.link,
+									target: "_blank",
+									rel: "noopener noreferrer",
+								}
+								: {})}
+							className="flex items-center w-full justify-between"
+>
+								<div className="flex flex-col justify-center items-center date w-[4.7rem] h-[4.7rem] p-2 bg-flou-orange mr-4 text-2xl rounded-md border-8 border-white md:mr-12 lg:w-[6.5rem] lg:h-[5.5rem]">
 									<p className="font-bold text-xl text-white leading-none text-center uppercase lg:text-3xl">
 										{gig.date_text}
 									</p>
 								</div>
 								<div className="text-white text-right leading-none md:mr-12">
 									<p>{gig.start_time_text}</p>
-									<p>{gig.venue}</p>
+									<p className="text-wrap">{gig.venue}</p>
 									<div className="flex justify-end md:hidden">
 										<MapMapper extraClasses="mr-2" />
 										<p>{gig.city}</p>
