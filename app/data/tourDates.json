@@ -17,6 +17,16 @@
     "date_text": "8 AUG",
     "start_time_text": "21:00",
     "day_of_week": "Petek",
+    "link": "https://facebook.com/events/s/vecer-mladih-trio-ljubavi-in-k/1943561179725201/"
+  }
+  {
+    "id": 3,
+    "city": "Ljubljana",
+    "venue": "ORTO Bar",
+    "event_date": "2025-12-09",
+    "date_text": "9 SEP",
+    "start_time_text": "21:00",
+    "day_of_week": "Petek",
     "link": null
   }
 ]
